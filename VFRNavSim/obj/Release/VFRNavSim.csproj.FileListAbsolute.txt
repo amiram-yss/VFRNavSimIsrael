@@ -1,0 +1,47 @@
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\bin\Release\VFRNavSim.exe.config
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\bin\Release\VFRNavSim.exe.manifest
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\bin\Release\VFRNavSim.application
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\bin\Release\VFRNavSim.exe
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\bin\Release\VFRNavSim.pdb
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\bin\Release\EntityFramework.dll
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\bin\Release\GMap.NET.Core.dll
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\bin\Release\GMap.NET.WindowsForms.dll
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\bin\Release\GMap.NET.WindowsPresentation.dll
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\bin\Release\Ionic.Zip.Reduced.dll
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\bin\Release\Newtonsoft.Json.dll
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\bin\Release\SharpKml.Core.dll
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\bin\Release\SharpKml.dll
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\bin\Release\System.Data.SQLite.dll
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\bin\Release\System.Data.SQLite.EF6.dll
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\bin\Release\System.Data.SQLite.Linq.dll
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\bin\Release\EntityFramework.xml
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\bin\Release\Newtonsoft.Json.xml
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\bin\Release\SharpKml.Core.xml
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\bin\Release\System.Data.SQLite.xml
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\bin\Release\System.Data.SQLite.dll.config
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Release\VFRNavSim.csprojAssemblyReference.cache
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Release\Simple Styles.baml
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Release\Custom Controls\RoundedButton.g.cs
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Release\Custom Controls\RoundedGroupBox.g.cs
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Release\Custom Controls\RoundedTextBox.g.cs
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Release\VFRNavSim_Content.g.cs
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Release\VFRNavSim_MarkupCompile.cache
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Release\VFRNavSim_MarkupCompile.lref
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Release\Custom Controls\RoundedButton.baml
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Release\Custom Controls\RoundedGroupBox.baml
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Release\Custom Controls\RoundedTextBox.baml
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Release\VFRNavSim.g.resources
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Release\VFRNavSim.InformationWindow.resources
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Release\VFRNavSim.MainWindow.resources
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Release\VFRNavSim.PointSelector.resources
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Release\VFRNavSim.Properties.Resources.resources
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Release\VFRNavSim.SettingsWindow.resources
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Release\VFRNavSim.csproj.GenerateResource.cache
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Release\VFRNavSim.csproj.CoreCompileInputs.cache
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Release\VFRNavSim.exe.manifest
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Release\VFRNavSim.application
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Release\VFRNavSim.csproj.CopyComplete
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Release\VFRNavSim.exe
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Release\VFRNavSim.pdb

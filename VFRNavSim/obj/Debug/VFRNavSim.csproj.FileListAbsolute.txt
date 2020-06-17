@@ -1,0 +1,46 @@
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\bin\Debug\VFRNavSim.exe.config
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\bin\Debug\VFRNavSim.exe
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\bin\Debug\VFRNavSim.pdb
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\bin\Debug\EntityFramework.dll
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\bin\Debug\GMap.NET.Core.dll
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\bin\Debug\GMap.NET.WindowsForms.dll
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\bin\Debug\GMap.NET.WindowsPresentation.dll
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\bin\Debug\Newtonsoft.Json.dll
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\bin\Debug\System.Data.SQLite.dll
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\bin\Debug\EntityFramework.xml
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\bin\Debug\Newtonsoft.Json.xml
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\bin\Debug\System.Data.SQLite.xml
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Debug\VFRNavSim.MainWindow.resources
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Debug\VFRNavSim.Properties.Resources.resources
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Debug\VFRNavSim.csproj.GenerateResource.cache
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Debug\VFRNavSim.csproj.CopyComplete
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Debug\VFRNavSim.exe
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Debug\VFRNavSim.pdb
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Debug\VFRNavSim.PointSelector.resources
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\bin\Debug\VFRNavSim.exe.manifest
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\bin\Debug\VFRNavSim.application
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Debug\VFRNavSim.InformationWindow.resources
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Debug\VFRNavSim.exe.manifest
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Debug\VFRNavSim.application
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\bin\Debug\Ionic.Zip.Reduced.dll
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\bin\Debug\SharpKml.Core.dll
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\bin\Debug\SharpKml.dll
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\bin\Debug\SharpKml.Core.xml
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Debug\VFRNavSim.csprojAssemblyReference.cache
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Debug\VFRNavSim.SettingsWindow.resources
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Debug\Simple Styles.baml
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Debug\Custom Controls\RoundedButton.g.cs
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Debug\VFRNavSim_Content.g.cs
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Debug\VFRNavSim_MarkupCompile.cache
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Debug\VFRNavSim_MarkupCompile.lref
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Debug\Custom Controls\RoundedButton.baml
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Debug\VFRNavSim.g.resources
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Debug\Custom Controls\RoundedGroupBox.g.cs
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Debug\Custom Controls\RoundedGroupBox.baml
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Debug\Custom Controls\RoundedTextBox.g.cs
+C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Debug\Custom Controls\RoundedTextBox.baml

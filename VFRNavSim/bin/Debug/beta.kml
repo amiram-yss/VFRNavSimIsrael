@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"
+  xmlns:gx="http://www.google.com/kml/ext/2.2">
+
+<Document>
+  <name>VFR Nav Sim</name>
+  <open>1</open>
+
+  <gx:Tour>
+    <name>Current Aircraft Position</name>
+    <gx:Playlist>
+      <gx:FlyTo>
+        <gx:duration>3.0</gx:duration>
+        <Camera>
+          <longitude>34.5705555555556</longitude>
+          <latitude>31.7241666666667</latitude>
+          <altitude>243</altitude>
+          <heading>205</heading>
+          <tilt>90</tilt>
+          <altitudeMode>absolute</altitudeMode>
+        </Camera>
+      </gx:FlyTo>
+
+    </gx:Playlist>
+  </gx:Tour>
+</Document>
+</kml>

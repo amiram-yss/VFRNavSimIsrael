@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="VFRNavSim.Custom_Controls.RoundedButton"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:VFRNavSim.Custom_Controls"
+             mc:Ignorable="d" 
+             SizeChanged="UserControl_SizeChanged"
+             Background="Transparent"
+             d:DesignHeight="20" d:DesignWidth="80">
+
+    <Border CornerRadius="10" MouseEnter="Border_MouseEnter" MouseLeftButtonUp="BrdFrame_MouseLeftButtonUp" MouseLeftButtonDown="BrdFrame_MouseLeftButtonDown" MouseLeave="BrdFrame_MouseLeave" x:Name="brdFrame" Background="#FF7C00D3">
+        <TextBlock x:Name="txt" TextAlignment="Center" Text="Button" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" TextDecorations="{x:Null}" TextOptions.TextHintingMode="Animated"/>
+    </Border>
+</UserControl>
