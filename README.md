@@ -1,3 +1,4 @@
 # VFRNavSimIsrael
 C:\Users\amira\source\repos\VFRNavSim
-KAKI
+
+Helps learning VFR Navigation in Israel.
