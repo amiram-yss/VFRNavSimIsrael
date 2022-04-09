@@ -1,4 +1,4 @@
 # VFRNavSimIsrael
-C:\Users\amira\source\repos\VFRNavSim
 
-Helps learning VFR Navigation in Israel.
+Tool for simulating navigational situations in the Israeli civilian airspace.
+Installed Google Earth is required for this to run.
