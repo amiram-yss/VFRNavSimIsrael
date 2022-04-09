@@ -12,13 +12,19 @@ using System.Windows.Forms;
 
 namespace VFRNavSim
 {
-    
+    /// <summary>
+    /// 
+    /// </summary>
     public partial class PointSelector : Form
     {
         private Dictionary<GMap.NET.WindowsForms.GMapMarker, Waypoint> _dicMrkWpt;
         Waypoint _wptEditedWaypoint;
         BindingList<Waypoint> bindingList;
         public event EventHandler PointUpdated;
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="_wpt"></param>
         public PointSelector(Waypoint _wpt)
         {
             InitializeComponent();
@@ -91,7 +97,7 @@ namespace VFRNavSim
         private void InitializeVfrMap()
         {
             GMap.NET.GMaps.Instance.Mode = GMap.NET.AccessMode.ServerOnly;
-            _gmpVfrMap.MapProvider = GMap.NET.MapProviders.OpenStreet4UMapProvider.Instance; //OpenStreet4U,opencycle
+            _gmpVfrMap.MapProvider = GMap.NET.MapProviders.GoogleMapProvider.Instance;
             _gmpVfrMap.MinZoom = 7;
             _gmpVfrMap.MaxZoom = 13;
             _gmpVfrMap.Zoom = 10;

@@ -44,3 +44,51 @@ C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Debug\Custom Controls\Rounde
 C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Debug\Custom Controls\RoundedGroupBox.baml
 C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Debug\Custom Controls\RoundedTextBox.g.cs
 C:\Users\amira\Source\Repos\VFRNavSim\VFRNavSim\obj\Debug\Custom Controls\RoundedTextBox.baml
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\obj\Debug\VFRNavSim.csproj.AssemblyReference.cache
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\obj\Debug\VFRNavSim.csproj.SuggestedBindingRedirects.cache
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\obj\Debug\Simple Styles.baml
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\obj\Debug\Custom Controls\RoundedButton.g.cs
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\obj\Debug\Custom Controls\RoundedGroupBox.g.cs
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\obj\Debug\Custom Controls\RoundedTextBox.g.cs
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\obj\Debug\VFRNavSim_Content.g.cs
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\obj\Debug\VFRNavSim_MarkupCompile.cache
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\obj\Debug\VFRNavSim_MarkupCompile.lref
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\obj\Debug\Custom Controls\RoundedButton.baml
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\obj\Debug\Custom Controls\RoundedGroupBox.baml
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\obj\Debug\Custom Controls\RoundedTextBox.baml
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\obj\Debug\VFRNavSim.g.resources
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\obj\Debug\VFRNavSim.InformationWindow.resources
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\obj\Debug\VFRNavSim.MainWindow.resources
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\obj\Debug\VFRNavSim.PointSelector.resources
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\obj\Debug\VFRNavSim.Properties.Resources.resources
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\obj\Debug\VFRNavSim.SettingsWindow.resources
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\obj\Debug\VFRNavSim.csproj.GenerateResource.cache
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\obj\Debug\VFRNavSim.csproj.CoreCompileInputs.cache
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\obj\Debug\VFRNavSim.exe
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\obj\Debug\VFRNavSim.pdb
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\bin\Debug\VFRNavSim.exe.config
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\bin\Debug\VFRNavSim.exe.manifest
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\bin\Debug\VFRNavSim.application
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\bin\Debug\VFRNavSim.exe
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\bin\Debug\VFRNavSim.pdb
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\bin\Debug\EntityFramework.dll
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\bin\Debug\GMap.NET.Core.dll
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\bin\Debug\GMap.NET.WindowsForms.dll
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\bin\Debug\GMap.NET.WindowsPresentation.dll
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\bin\Debug\Ionic.Zip.Reduced.dll
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\bin\Debug\Newtonsoft.Json.dll
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\bin\Debug\SharpKml.Core.dll
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\bin\Debug\SharpKml.dll
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\bin\Debug\System.Data.SQLite.dll
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\bin\Debug\EntityFramework.xml
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\bin\Debug\Newtonsoft.Json.xml
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\bin\Debug\SharpKml.Core.xml
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\bin\Debug\System.Data.SQLite.xml
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\obj\Debug\VFRNavSim.exe.manifest
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\obj\Debug\VFRNavSim.application
+C:\Users\עמירם יסיף\Source\Repos\VFRNavSimIsrael\VFRNavSim\obj\Debug\VFRNavSim.csproj.CopyComplete

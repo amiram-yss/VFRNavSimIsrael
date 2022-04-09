@@ -548,6 +548,11 @@
             this._txtCruizeAltitude.Name = "_txtCruizeAltitude";
             this._txtCruizeAltitude.Size = new System.Drawing.Size(120, 20);
             this._txtCruizeAltitude.TabIndex = 4;
+            this._txtCruizeAltitude.Value = new decimal(new int[] {
+            2000,
+            0,
+            0,
+            0});
             this._txtCruizeAltitude.ValueChanged += new System.EventHandler(this._txtCruizeAltitude_ValueChanged);
             // 
             // _txtCruizeSpeed

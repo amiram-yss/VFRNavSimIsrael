@@ -47,7 +47,6 @@
             this._numWindRangeStart = new System.Windows.Forms.NumericUpDown();
             this._numWindMaxSpeed = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.elementHost1 = new System.Windows.Forms.Integration.ElementHost();
             this._btnSave = new VFRNavSim.Custom_Controls.RoundedButton();
             this.tabControl1.SuspendLayout();
@@ -70,7 +69,6 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Location = new System.Drawing.Point(12, 13);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.RightToLeftLayout = true;
@@ -327,16 +325,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "כאשר רוח נבחרת באופן רנדומלי:\r\n\r\nמהירות רוח מקסימלית:\r\n";
             // 
-            // tabPage2
-            // 
-            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(469, 322);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "הגדרות תוכנה";
-            // 
             // elementHost1
             // 
             this.elementHost1.Location = new System.Drawing.Point(12, 367);
@@ -384,7 +372,6 @@
 
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox groupBox2;

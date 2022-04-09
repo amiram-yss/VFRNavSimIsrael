@@ -31,13 +31,14 @@
             this._gmpResultMap = new GMap.NET.WindowsForms.GMapControl();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this._btnShowInfo = new System.Windows.Forms.Button();
+            this._txtPathBearing = new System.Windows.Forms.Label();
             this._txtGagueHeading = new System.Windows.Forms.Label();
             this._txtGagueTimer = new System.Windows.Forms.Label();
             this._txtGagueAltitude = new System.Windows.Forms.Label();
             this._txtGagueSpeed = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this._lblWind = new System.Windows.Forms.Label();
-            this._txtPathBearing = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -68,7 +69,7 @@
             this._gmpResultMap.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
             this._gmpResultMap.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
             this._gmpResultMap.ShowTileGridLines = false;
-            this._gmpResultMap.Size = new System.Drawing.Size(579, 356);
+            this._gmpResultMap.Size = new System.Drawing.Size(647, 355);
             this._gmpResultMap.TabIndex = 1;
             this._gmpResultMap.TabStop = false;
             this._gmpResultMap.Zoom = 0D;
@@ -82,12 +83,13 @@
             this.groupBox1.Controls.Add(this._txtGagueTimer);
             this.groupBox1.Controls.Add(this._txtGagueAltitude);
             this.groupBox1.Controls.Add(this._txtGagueSpeed);
+            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(579, 68);
+            this.groupBox1.Size = new System.Drawing.Size(647, 69);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "לוח המכשירים";
@@ -104,12 +106,24 @@
             this._btnShowInfo.UseVisualStyleBackColor = false;
             this._btnShowInfo.Click += new System.EventHandler(this._btnShowInfo_Click);
             // 
+            // _txtPathBearing
+            // 
+            this._txtPathBearing.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this._txtPathBearing.AutoSize = true;
+            this._txtPathBearing.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this._txtPathBearing.Location = new System.Drawing.Point(282, 20);
+            this._txtPathBearing.Name = "_txtPathBearing";
+            this._txtPathBearing.Size = new System.Drawing.Size(35, 13);
+            this._txtPathBearing.TabIndex = 0;
+            this._txtPathBearing.Text = "label1";
+            this._txtPathBearing.Click += new System.EventHandler(this._txtGagueHeading_Click);
+            // 
             // _txtGagueHeading
             // 
             this._txtGagueHeading.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this._txtGagueHeading.AutoSize = true;
             this._txtGagueHeading.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this._txtGagueHeading.Location = new System.Drawing.Point(485, 42);
+            this._txtGagueHeading.Location = new System.Drawing.Point(553, 42);
             this._txtGagueHeading.Name = "_txtGagueHeading";
             this._txtGagueHeading.Size = new System.Drawing.Size(35, 13);
             this._txtGagueHeading.TabIndex = 0;
@@ -121,7 +135,7 @@
             this._txtGagueTimer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this._txtGagueTimer.AutoSize = true;
             this._txtGagueTimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this._txtGagueTimer.Location = new System.Drawing.Point(348, 42);
+            this._txtGagueTimer.Location = new System.Drawing.Point(416, 42);
             this._txtGagueTimer.Name = "_txtGagueTimer";
             this._txtGagueTimer.Size = new System.Drawing.Size(35, 13);
             this._txtGagueTimer.TabIndex = 0;
@@ -132,7 +146,7 @@
             this._txtGagueAltitude.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this._txtGagueAltitude.AutoSize = true;
             this._txtGagueAltitude.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this._txtGagueAltitude.Location = new System.Drawing.Point(348, 20);
+            this._txtGagueAltitude.Location = new System.Drawing.Point(416, 20);
             this._txtGagueAltitude.Name = "_txtGagueAltitude";
             this._txtGagueAltitude.Size = new System.Drawing.Size(35, 13);
             this._txtGagueAltitude.TabIndex = 0;
@@ -143,7 +157,7 @@
             this._txtGagueSpeed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this._txtGagueSpeed.AutoSize = true;
             this._txtGagueSpeed.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this._txtGagueSpeed.Location = new System.Drawing.Point(485, 20);
+            this._txtGagueSpeed.Location = new System.Drawing.Point(553, 20);
             this._txtGagueSpeed.Name = "_txtGagueSpeed";
             this._txtGagueSpeed.Size = new System.Drawing.Size(35, 13);
             this._txtGagueSpeed.TabIndex = 0;
@@ -169,8 +183,8 @@
             this.splitContainer1.Panel2.Controls.Add(this._gmpResultMap);
             this.splitContainer1.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.splitContainer1.Panel2MinSize = 100;
-            this.splitContainer1.Size = new System.Drawing.Size(581, 432);
-            this.splitContainer1.SplitterDistance = 70;
+            this.splitContainer1.Size = new System.Drawing.Size(649, 432);
+            this.splitContainer1.SplitterDistance = 71;
             this.splitContainer1.TabIndex = 3;
             // 
             // _lblWind
@@ -179,30 +193,31 @@
             this._lblWind.AutoSize = true;
             this._lblWind.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this._lblWind.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this._lblWind.Location = new System.Drawing.Point(485, 338);
+            this._lblWind.Location = new System.Drawing.Point(553, 234);
             this._lblWind.Name = "_lblWind";
             this._lblWind.Size = new System.Drawing.Size(52, 18);
             this._lblWind.TabIndex = 2;
             this._lblWind.Text = "label1";
             // 
-            // _txtPathBearing
+            // label1
             // 
-            this._txtPathBearing.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this._txtPathBearing.AutoSize = true;
-            this._txtPathBearing.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this._txtPathBearing.Location = new System.Drawing.Point(214, 20);
-            this._txtPathBearing.Name = "_txtPathBearing";
-            this._txtPathBearing.Size = new System.Drawing.Size(35, 13);
-            this._txtPathBearing.TabIndex = 0;
-            this._txtPathBearing.Text = "label1";
-            this._txtPathBearing.Click += new System.EventHandler(this._txtGagueHeading_Click);
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label1.ForeColor = System.Drawing.Color.RosyBrown;
+            this.label1.Location = new System.Drawing.Point(3, -1);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(242, 26);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "במידה והמיקום אינו נטען אוטומטית, לחצו על\r\nCurrent Aircraft Position בתפריט בGoog" +
+    "le Earth\r\n";
             // 
             // InformationWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
-            this.ClientSize = new System.Drawing.Size(581, 432);
+            this.ClientSize = new System.Drawing.Size(649, 432);
             this.Controls.Add(this.splitContainer1);
             this.Name = "InformationWindow";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -231,5 +246,6 @@
         private System.Windows.Forms.Button _btnShowInfo;
         private System.Windows.Forms.Label _lblWind;
         private System.Windows.Forms.Label _txtPathBearing;
+        private System.Windows.Forms.Label label1;
     }
 }
