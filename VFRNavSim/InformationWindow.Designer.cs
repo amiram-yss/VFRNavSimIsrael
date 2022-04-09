@@ -109,11 +109,10 @@
             // _txtPathBearing
             // 
             this._txtPathBearing.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this._txtPathBearing.AutoSize = true;
-            this._txtPathBearing.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this._txtPathBearing.Location = new System.Drawing.Point(55, 18);
+            this._txtPathBearing.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this._txtPathBearing.Location = new System.Drawing.Point(6, 22);
             this._txtPathBearing.Name = "_txtPathBearing";
-            this._txtPathBearing.Size = new System.Drawing.Size(35, 13);
+            this._txtPathBearing.Size = new System.Drawing.Size(138, 13);
             this._txtPathBearing.TabIndex = 0;
             this._txtPathBearing.Text = "label1";
             this._txtPathBearing.Click += new System.EventHandler(this._txtGagueHeading_Click);
@@ -121,11 +120,10 @@
             // _txtGagueHeading
             // 
             this._txtGagueHeading.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this._txtGagueHeading.AutoSize = true;
-            this._txtGagueHeading.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this._txtGagueHeading.Location = new System.Drawing.Point(326, 40);
+            this._txtGagueHeading.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this._txtGagueHeading.Location = new System.Drawing.Point(285, 44);
             this._txtGagueHeading.Name = "_txtGagueHeading";
-            this._txtGagueHeading.Size = new System.Drawing.Size(35, 13);
+            this._txtGagueHeading.Size = new System.Drawing.Size(116, 13);
             this._txtGagueHeading.TabIndex = 0;
             this._txtGagueHeading.Text = "label1";
             this._txtGagueHeading.Click += new System.EventHandler(this._txtGagueHeading_Click);
@@ -133,36 +131,32 @@
             // _txtGagueTimer
             // 
             this._txtGagueTimer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this._txtGagueTimer.AutoSize = true;
-            this._txtGagueTimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this._txtGagueTimer.Location = new System.Drawing.Point(189, 40);
+            this._txtGagueTimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this._txtGagueTimer.Location = new System.Drawing.Point(162, 44);
             this._txtGagueTimer.Name = "_txtGagueTimer";
-            this._txtGagueTimer.Size = new System.Drawing.Size(35, 13);
+            this._txtGagueTimer.Size = new System.Drawing.Size(117, 13);
             this._txtGagueTimer.TabIndex = 0;
             this._txtGagueTimer.Text = "label1";
             // 
             // _txtGagueAltitude
             // 
             this._txtGagueAltitude.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this._txtGagueAltitude.AutoSize = true;
-            this._txtGagueAltitude.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this._txtGagueAltitude.Location = new System.Drawing.Point(189, 18);
+            this._txtGagueAltitude.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this._txtGagueAltitude.Location = new System.Drawing.Point(162, 22);
             this._txtGagueAltitude.Name = "_txtGagueAltitude";
-            this._txtGagueAltitude.Size = new System.Drawing.Size(35, 13);
+            this._txtGagueAltitude.Size = new System.Drawing.Size(117, 13);
             this._txtGagueAltitude.TabIndex = 0;
             this._txtGagueAltitude.Text = "label1";
             // 
             // _txtGagueSpeed
             // 
             this._txtGagueSpeed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this._txtGagueSpeed.AutoSize = true;
-            this._txtGagueSpeed.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this._txtGagueSpeed.Location = new System.Drawing.Point(326, 18);
+            this._txtGagueSpeed.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this._txtGagueSpeed.Location = new System.Drawing.Point(285, 22);
             this._txtGagueSpeed.Name = "_txtGagueSpeed";
-            this._txtGagueSpeed.Size = new System.Drawing.Size(35, 13);
+            this._txtGagueSpeed.Size = new System.Drawing.Size(116, 13);
             this._txtGagueSpeed.TabIndex = 0;
             this._txtGagueSpeed.Text = "label1";
-            this._txtGagueSpeed.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label1
             // 
