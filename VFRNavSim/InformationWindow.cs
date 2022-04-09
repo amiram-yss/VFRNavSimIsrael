@@ -35,7 +35,6 @@ namespace VFRNavSim
 
         private void Label2_Click(object sender, EventArgs e)
         {
-
         }
 
         GMap.NET.WindowsForms.GMapOverlay marksLayout, linesLayout;
@@ -48,6 +47,13 @@ namespace VFRNavSim
         private void InformationWindow_Load(object sender, EventArgs e)
         {
 
+        }
+
+
+        private void InformationWindow_HelpButtonClicked(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            GaugeHelpWindow helpeWindow = new GaugeHelpWindow();
+            helpeWindow.Show();
         }
 
         /// <summary>

@@ -130,6 +130,12 @@
     <Compile Include="Custom Controls\RoundedTextBox.xaml.cs">
       <DependentUpon>RoundedTextBox.xaml</DependentUpon>
     </Compile>
+    <Compile Include="GaugeHelpWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GaugeHelpWindow.Designer.cs">
+      <DependentUpon>GaugeHelpWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="GeoVector.cs" />
     <Compile Include="GoogleEarthBuffer.cs" />
     <Compile Include="InformationWindow.cs">
@@ -160,6 +166,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GaugeHelpWindow.resx">
+      <DependentUpon>GaugeHelpWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InformationWindow.resx">
       <DependentUpon>InformationWindow.cs</DependentUpon>
     </EmbeddedResource>

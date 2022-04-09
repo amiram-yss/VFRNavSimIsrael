@@ -98,9 +98,9 @@
             // 
             this._btnShowInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
             this._btnShowInfo.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this._btnShowInfo.Location = new System.Drawing.Point(6, 68);
+            this._btnShowInfo.Location = new System.Drawing.Point(11, 66);
             this._btnShowInfo.Name = "_btnShowInfo";
-            this._btnShowInfo.Size = new System.Drawing.Size(138, 24);
+            this._btnShowInfo.Size = new System.Drawing.Size(138, 29);
             this._btnShowInfo.TabIndex = 1;
             this._btnShowInfo.Text = "פתח/ סגור חלון מידע";
             this._btnShowInfo.UseVisualStyleBackColor = false;
@@ -164,7 +164,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.label1.ForeColor = System.Drawing.Color.RosyBrown;
-            this.label1.Location = new System.Drawing.Point(162, 66);
+            this.label1.Location = new System.Drawing.Point(157, 66);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(242, 26);
             this.label1.TabIndex = 2;
@@ -214,6 +214,10 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
             this.ClientSize = new System.Drawing.Size(412, 432);
             this.Controls.Add(this.splitContainer1);
+            this.HelpButton = true;
+            this.IsMdiContainer = true;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "InformationWindow";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Text = "חלון תמונת מצב";
@@ -227,7 +231,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.ResumeLayout(false);
-
+            this.HelpButtonClicked += InformationWindow_HelpButtonClicked;
         }
 
         #endregion
