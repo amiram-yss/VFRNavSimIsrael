@@ -74,11 +74,14 @@ namespace VFRNavSim
             FiveCharName = fiveCharName;
             RequestType = requestType;
         }
+     
         public Waypoint(XmlNode xNode)
         {
             try
             {
-                Name = xNode["description"].InnerText;
+                Name = "-";
+                if(xNode["description"] != null)
+                    Name = xNode["description"].InnerText;
                 this.FiveCharName = xNode["name"].InnerText;
                 string coords = xNode["Point"]["coordinates"].InnerText;
                 var splitResult = coords.Split(new char[] { ',' });

@@ -295,6 +295,7 @@
 		<Placemark>
 			<name>AVNON</name>
 			<visibility>0</visibility>
+			<description>אבנון (?)</description>
 			<Point>
 				<altitudeMode>absolute</altitudeMode>
 				<coordinates>34.9702778,30.9713889,0</coordinates>
