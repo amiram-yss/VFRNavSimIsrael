@@ -12,7 +12,7 @@ namespace VFRNavSim
 {
     public partial class InformationWindow : Form
     {
-        const int SMALL_WINDOW_HEIGHT = 110, BIG_WINDOW_HEIGHT = 500;
+        const int SMALL_WINDOW_HEIGHT = 130, BIG_WINDOW_HEIGHT = 500, COLLAPSED_UPPER_SPLIT_DISTANCE = 110;
         Waypoint _wptStart, _wptDestination;
         int _windDir, _windSpeed, _cruizeHeight, _cruizeSpeed, _camAngel;
         TimeSpan _timCurrent, _timIdent;
@@ -30,7 +30,7 @@ namespace VFRNavSim
                 this.Height = SMALL_WINDOW_HEIGHT;
             else
                 this.Height = BIG_WINDOW_HEIGHT;
-            splitContainer1.SplitterDistance = 70;
+            splitContainer1.SplitterDistance = COLLAPSED_UPPER_SPLIT_DISTANCE;
         }
 
         private void Label2_Click(object sender, EventArgs e)
@@ -43,6 +43,11 @@ namespace VFRNavSim
         private void _txtGagueHeading_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void InformationWindow_Load(object sender, EventArgs e)
+        {
+
         }
 
         /// <summary>
