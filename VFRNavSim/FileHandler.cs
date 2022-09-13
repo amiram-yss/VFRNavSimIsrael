@@ -24,6 +24,11 @@ namespace VFRNavSim
             WaypointsDataSet = ConvertXmlNodesToWaypoint(datasetXmlSections);
             return WaypointsDataSet;
         }
+        /// <summary>
+        /// Makes a list of points according to xml file, and converts them to points.
+        /// </summary>
+        /// <param name="datasetXmlSections">XML node list</param>
+        /// <returns>Convertion of the list into a wayopint list</returns>
         private static List<Waypoint> ConvertXmlNodesToWaypoint(XmlNodeList datasetXmlSections)
         {
             List<Waypoint> lst = new List<Waypoint>();
@@ -35,11 +40,21 @@ namespace VFRNavSim
             }
             return lst;
         }
+        /// <summary>
+        /// Split XML file into Placemaker Nodes.
+        /// </summary>
+        /// <param name="xDoc">Raw XML documentation</param>
+        /// <returns>Relevant Placemaker XML nodes list</returns>
         private static XmlNodeList SeperateToPlacemarkNodeTextSections(XmlDocument xDoc)
         {
             var xNodes = xDoc.GetElementsByTagName("Placemark");
             return xNodes;
         }
+        /// <summary>
+        /// Load XML Doc
+        /// </summary>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
         private static XmlDocument GetXMLWaypointDoc()
         {
             WaypointsDataSet = new List<Waypoint>();

@@ -35,24 +35,43 @@ namespace VFRNavSim
             Position = new GMap.NET.PointLatLng { Lat = lat, Lng = lng };
             return Position;
         }
+        /// <summary>
+        /// Latitude getter
+        /// </summary>
+        /// <returns>Latitude</returns>
         public double GetLatitude()
         {
             return this.Position.Lat;
         }
+        /// <summary>
+        /// Longitude getter
+        /// </summary>
+        /// <returns>Longitude</returns>
         public double GetLongitude()
         {
             return this.Position.Lng;
         }
+        /// <summary>
+        /// Latitude setter
+        /// </summary>
+        /// <param name="latitude">Latitude new variable</param>
         public void SetLatitude(double latitude)
         {
             var lng = this.Position.Lng;
             Position = new GMap.NET.PointLatLng(latitude, lng);
         }
+        /// <summary>
+        /// Longitude setter
+        /// </summary>
+        /// <param name="longitude">Longitude new variable</param>
         public void SetLongitude(double longitude)
         {
             var lat = this.Position.Lat;
             Position = new GMap.NET.PointLatLng(lat, longitude);
         }
+        /// <summary>
+        /// Default constructor
+        /// </summary>
         public Waypoint()
         {
             Name = "-";
@@ -60,6 +79,13 @@ namespace VFRNavSim
             RequestType = CallRequestType.NOINFO;
             Position = new GMap.NET.PointLatLng(0, 0);
         }
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="position"></param>
+        /// <param name="fiveCharName"></param>
+        /// <param name="requestType"></param>
         public Waypoint(string name, GMap.NET.PointLatLng position, string fiveCharName = "", CallRequestType requestType = CallRequestType.NOINFO)
         {
             Name = name;
@@ -67,6 +93,14 @@ namespace VFRNavSim
             FiveCharName = fiveCharName;
             RequestType = requestType;
         }
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="lat"></param>
+        /// <param name="lng"></param>
+        /// <param name="fiveCharName"></param>
+        /// <param name="requestType"></param>
         public Waypoint(string name, double lat, double lng, string fiveCharName = "", CallRequestType requestType = CallRequestType.NOINFO)
         {
             Name = name;
@@ -75,6 +109,10 @@ namespace VFRNavSim
             RequestType = requestType;
         }
      
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="xNode">XML node to convert</param>
         public Waypoint(XmlNode xNode)
         {
             try
@@ -91,6 +129,10 @@ namespace VFRNavSim
             }
             catch { }
         }
+        /// <summary>
+        /// Copy constructor.
+        /// </summary>
+        /// <param name="waypoint">Other waypoint</param>
         public Waypoint(Waypoint waypoint)
         {
             this.FiveCharName = waypoint.FiveCharName;

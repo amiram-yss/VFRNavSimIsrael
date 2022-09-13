@@ -19,6 +19,9 @@ namespace VFRNavSim
             LoadSettingsToControls();
         }
 
+        /// <summary>
+        /// Init controls and events
+        /// </summary>
         private void InitializeControls()
         {
             //Save Button
@@ -31,6 +34,11 @@ namespace VFRNavSim
             _numWindRangeEnd.MouseWheel += _numWindRangeEnd_MouseWheel;
         }
 
+        /// <summary>
+        /// Custom mouse wheel for wind control
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void _numWindRangeEnd_MouseWheel(object sender, MouseEventArgs e)
         {
             ((HandledMouseEventArgs)e).Handled = true;
@@ -50,6 +58,11 @@ namespace VFRNavSim
             }
         }
 
+        /// <summary>
+        /// Custom mouse wheel for wind range control
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void _numWindRangeStart_MouseWheel(object sender, MouseEventArgs e)
         {
             ((HandledMouseEventArgs)e).Handled = true;
@@ -74,6 +87,11 @@ namespace VFRNavSim
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// Save button pressed
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void _btnSave_Click(object sender, EventArgs e)
         {
             Properties.Settings.Default._propTimerOffset = (int)this._numMaxTimeOffset.Value;
@@ -86,6 +104,9 @@ namespace VFRNavSim
             this.Dispose();
         }
 
+        /// <summary>
+        /// Load current settings to window
+        /// </summary>
         private void LoadSettingsToControls()
         {
             LoadWindSettings();
@@ -93,17 +114,26 @@ namespace VFRNavSim
             LoadTimeOffsetSetting();
         }
 
+        /// <summary>
+        /// Set time offset in control
+        /// </summary>
         private void LoadTimeOffsetSetting()
         {
             this._numMaxTimeOffset.Value = Properties.Settings.Default._propTimerOffset;
         }
 
+        /// <summary>
+        /// Sets current view settings in controls
+        /// </summary>
         private void LoadViewSettings()
         {
             this._numViewAngleDeltaToTheWind.Value = Properties.Settings.Default._propViewAngleDeltaToTheWind;
             this._numViewAngleDeltaWithTheWind.Value = Properties.Settings.Default._propViewAngleDeltaWithTheWind;
         }
 
+        /// <summary>
+        /// Sets current wind settings in view
+        /// </summary>
         private void LoadWindSettings()
         {
             this._numWindMaxSpeed.Value = Properties.Settings.Default._propWindMaxSpeed;

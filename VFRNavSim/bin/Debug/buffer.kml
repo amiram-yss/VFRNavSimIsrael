@@ -10,10 +10,10 @@
       <gx:FlyTo>
         <gx:duration>3.0</gx:duration>
         <Camera>
-          <longitude>34.5391666666667</longitude>
-          <latitude>31.6663888888889</latitude>
-          <altitude>0</altitude>
-          <heading>-204</heading>
+          <longitude>34.8883333333333</longitude>
+          <latitude>32.1908333333333</latitude>
+          <altitude>609</altitude>
+          <heading>-297</heading>
           <tilt>90</tilt>
           <altitudeMode>absolute</altitudeMode>
         </Camera>
@@ -26,10 +26,10 @@
       <gx:FlyTo>
         <gx:duration>3.0</gx:duration>
         <Camera>
-          <longitude>34.5391666666667</longitude>
-          <latitude>31.6663888888889</latitude>
-          <altitude>0</altitude>
-          <heading>-204</heading>
+          <longitude>34.8883333333333</longitude>
+          <latitude>32.1908333333333</latitude>
+          <altitude>609</altitude>
+          <heading>-297</heading>
           <tilt>90</tilt>
           <altitudeMode>absolute</altitudeMode>
         </Camera>

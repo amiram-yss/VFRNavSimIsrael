@@ -159,6 +159,11 @@ namespace VFRNavSim
         }
         #endregion
         #region Methods
+        /// <summary>
+        /// Sets destination at a given distance and angle from the current point.
+        /// </summary>
+        /// <param name="bearing">Bearing from point</param>
+        /// <param name="distance">Distance from point</param>
         private void SetDestinationPointUsingVectorDistanceAndBearing(double bearing, double distance)
         {
             var R = 3443.9; //#Radius of the Nautical Miles

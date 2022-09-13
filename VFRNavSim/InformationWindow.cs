@@ -22,7 +22,11 @@ namespace VFRNavSim
         {
 
         }
-
+        /// <summary>
+        /// Hide/ Unhide info about the current position
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void _btnShowInfo_Click(object sender, EventArgs e)
         {
             splitContainer1.Panel2Collapsed = !splitContainer1.Panel2Collapsed;
@@ -74,6 +78,9 @@ namespace VFRNavSim
             PutCamOnGoogleEarth(_hasIdentPoint);
         }
 
+        /// <summary>
+        /// Change cam and compass headings
+        /// </summary>
         private void ChangeEyeAndCompass()
         {
             _camAngel = EyePointAngle((int)Math.Round(this._vctVfrRoute.TrueBearing), (_windDir <= 180 ? _windDir + 180 : _windDir - 180));
@@ -81,12 +88,25 @@ namespace VFRNavSim
             this._txtGagueHeading.Text = "כיוון:["+_camAngel+"]";
         }
 
+        /// <summary>
+        /// Upload camera to google earth
+        /// </summary>
+        /// <param name="_hasIdentPoint"></param>
         private void PutCamOnGoogleEarth(bool _hasIdentPoint)
         {
             if (!_hasIdentPoint)
-                GoogleEarthBuffer.RunOnGoogleEarthWithoutIdentPoint(_vctRealPath.DestinationPoint, _cruizeHeight, _camAngel+4.25>360?_camAngel+4.25:_camAngel-355.75);
+                GoogleEarthBuffer.RunOnGoogleEarthWithoutIdentPoint(
+                    _vctRealPath.DestinationPoint,
+                    _cruizeHeight,
+                    _camAngel+4.25>360?_camAngel+4.25:_camAngel-355.75
+                    );
             else
-                GoogleEarthBuffer.RunOnGoogleEarthWithIdentPoint(_vctRealPath.DestinationPoint, _vctIdent.DestinationPoint, _cruizeHeight, _camAngel + 4.25 > 360 ? _camAngel + 4.25 : _camAngel - 355.75);
+                GoogleEarthBuffer.RunOnGoogleEarthWithIdentPoint(
+                    _vctRealPath.DestinationPoint,
+                    _vctIdent.DestinationPoint,
+                    _cruizeHeight,
+                    _camAngel + 4.25 > 360 ? _camAngel + 4.25 : _camAngel - 355.75
+                    );
         }
 
         /// <summary>
@@ -255,11 +275,18 @@ namespace VFRNavSim
             _gmpResultMap.ShowCenter = false;
         }
         #endregion
+        /// <summary>
+        /// Calc view heading
+        /// </summary>
+        /// <param name="bearing"></param>
+        /// <param name="windDir"></param>
+        /// <returns></returns>
         private int EyePointAngle(int bearing, int windDir)
         {
             int rightStart, rightEnd;
             rightStart = bearing;
-            int viewAngle=(new Random().Next(Properties.Settings.Default._propViewAngleDeltaToTheWind+ Properties.Settings.Default._propViewAngleDeltaWithTheWind))-Properties.Settings.Default._propViewAngleDeltaWithTheWind;
+            // Give random component to viewing angle.
+            int viewAngle =(new Random().Next(Properties.Settings.Default._propViewAngleDeltaToTheWind+ Properties.Settings.Default._propViewAngleDeltaWithTheWind))-Properties.Settings.Default._propViewAngleDeltaWithTheWind;
             rightEnd = rightStart > 180 ? rightStart - 180 : rightStart + 180;
             if(IsToTheRight(windDir,rightStart,rightEnd))
             {
@@ -275,6 +302,13 @@ namespace VFRNavSim
                 viewAngle += 360;
             return viewAngle;
         }
+        /// <summary>
+        /// Is the wind coming from the right.
+        /// </summary>
+        /// <param name="windDir">wind direction</param>
+        /// <param name="rightStart">Starting hdg of right dir</param>
+        /// <param name="rightEnd">Ending hdg of right dir</param>
+        /// <returns></returns>
         private bool IsToTheRight(int windDir, int rightStart, int rightEnd)
         {
             if (rightStart < rightEnd)

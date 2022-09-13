@@ -13,8 +13,19 @@ using System.Diagnostics;
 
 namespace VFRNavSim
 {
+    /// <summary>
+    /// Connector with Google Earth program
+    /// </summary>
     class GoogleEarthBuffer
     {
+        /// <summary>
+        /// Runs relevant method to launch Google Earth.
+        /// </summary>
+        /// <param name="_pntCurrentEyePoint">Current location</param>
+        /// <param name="_pntIdentPoint">Identification point, if exists</param>
+        /// <param name="alt">Eyepoint altitude</param>
+        /// <param name="bearing">Eyepoint heading</param>
+        /// <returns></returns>
         public static bool RunOnGoogleEarthWithIdentPoint(PointLatLng _pntCurrentEyePoint, PointLatLng _pntIdentPoint, int alt, double bearing)
         {
             if (!CreateKmlWithIdent(_pntCurrentEyePoint, (int)Math.Round(bearing), alt, _pntIdentPoint))
@@ -23,6 +34,13 @@ namespace VFRNavSim
                 return false;
             return true;
         }
+        /// <summary>
+        /// Runs relevant method to launch Google Earth.
+        /// </summary>
+        /// <param name="_pntCurrentEyePoint"></param>
+        /// <param name="alt"></param>
+        /// <param name="bearing"></param>
+        /// <returns></returns>
         public static bool RunOnGoogleEarthWithoutIdentPoint(PointLatLng _pntCurrentEyePoint,  int alt, double bearing)
         {
             if (!CreateKmlWithoutIdent(_pntCurrentEyePoint, (int)Math.Round(bearing), alt))
@@ -44,6 +62,13 @@ namespace VFRNavSim
             return true;
         }
 
+        /// <summary>
+        /// Build a KML file to set the eyepoint where it needs to be on the Google Earth.
+        /// </summary>
+        /// <param name="_pntCurrentEyePoint">Location of cam</param>
+        /// <param name="hdg">Heading of cam</param>
+        /// <param name="alt">Altitude of cam</param>
+        /// <returns>True for success in writing KML file. False o.w.</returns>
         private static bool CreateKmlWithoutIdent(PointLatLng _pntCurrentEyePoint, int hdg, int alt)
         {
             int altFt = (int)((double)alt / 3.281);
@@ -69,6 +94,15 @@ namespace VFRNavSim
             }
             return true;
         }
+        /// <summary>
+        /// Build a KML file to set the eyepoint where it needs to, and ident point
+        /// be on the Google Earth.
+        /// </summary>
+        /// <param name="_pntCurrentEyePoint"></param>
+        /// <param name="hdg"></param>
+        /// <param name="alt"></param>
+        /// <param name="_pntIdentPoint"></param>
+        /// <returns></returns>
         private static bool CreateKmlWithIdent(PointLatLng _pntCurrentEyePoint, int hdg, int alt, PointLatLng _pntIdentPoint)
         {
             int altFt = (int)((double)alt / 3.281);

@@ -36,6 +36,11 @@ namespace VFRNavSim
             _frmPointSelectorDestination.PointUpdated += DestinationPointUpdate;
         }
 
+        /// <summary>
+        /// Updates destination point, after returning from point selection menu.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void DestinationPointUpdate(object sender, EventArgs e)
         {
             _wptDestination = (e as PointChangedEventArgs).waypoint;
@@ -45,6 +50,11 @@ namespace VFRNavSim
             _lblWaypointDestinationLong.Text = _wptDestination.GetLongitude().ToString();
         }
 
+        /// <summary>
+        /// Updates starting point, after returning from point selection menu.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void StartPointUpdate(object sender, EventArgs e)
         {
             _wptStart = (e as PointChangedEventArgs).waypoint;
@@ -90,11 +100,21 @@ namespace VFRNavSim
             roundedGroupBox1.Text = "נתוני לג";
         }
 
+        /// <summary>
+        /// Open selection menu for destination point
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void _btnSetDestinationPoint_Click1(object sender, EventArgs e)
         {
             _frmPointSelectorDestination.Show();
         }
 
+        /// <summary>
+        /// Custom wheel behaviour.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void _txtCurrentSeconds_MouseWheel(object sender, MouseEventArgs e)
         {
             ((HandledMouseEventArgs)e).Handled = true;
@@ -114,6 +134,11 @@ namespace VFRNavSim
             }
         }
 
+        /// <summary>
+        /// Custom wheel behaviour.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void _txtCurrentMinutes_MouseWheel(object sender, MouseEventArgs e)
         {
             ((HandledMouseEventArgs)e).Handled = true;
@@ -133,6 +158,12 @@ namespace VFRNavSim
             }
         }
 
+
+        /// <summary>
+        /// Custom wheel behaviour.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void _txtCheckpointMinutes_MouseWheel(object sender, System.Windows.Forms.MouseEventArgs e)
         {
             ((HandledMouseEventArgs)e).Handled = true;
@@ -151,6 +182,11 @@ namespace VFRNavSim
                 _txtCheckpointMinutes.Value = newVal;
             }
         }
+        /// <summary>
+        /// Custom wheel behaviour.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void _txtCheckpointSeconds_MouseWheel(object sender, System.Windows.Forms.MouseEventArgs e)
         {
             ((HandledMouseEventArgs)e).Handled = true;
@@ -168,6 +204,11 @@ namespace VFRNavSim
                 _txtCheckpointSeconds.Value = newVal;
             }
         }
+        /// <summary>
+        /// Custom wheel behaviour.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void _txtCruizeSpeed_MouseWheel(object sender, System.Windows.Forms.MouseEventArgs e)
         {
             ((HandledMouseEventArgs)e).Handled = true;
@@ -186,6 +227,11 @@ namespace VFRNavSim
                 _txtCruizeSpeed.Value = newVal;
             }
         }
+        /// <summary>
+        /// Custom wheel behaviour.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void _txtCruizeAltitude_MouseWheel(object sender, System.Windows.Forms.MouseEventArgs e)
         {
             ((HandledMouseEventArgs)e).Handled = true;
@@ -204,6 +250,11 @@ namespace VFRNavSim
                 _txtCruizeAltitude.Value = newVal;
             }
         }
+        /// <summary>
+        /// Custom wheel behaviour.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void _txtWindSpeed_MouseWheel(object sender, System.Windows.Forms.MouseEventArgs e)
         {
             ((HandledMouseEventArgs)e).Handled = true;
@@ -222,6 +273,11 @@ namespace VFRNavSim
                 _txtWindSpeed.Value = newVal;
             }
         }
+        /// <summary>
+        /// Custom wheel behaviour.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void _txtWindDirection_MouseWheel(object sender, System.Windows.Forms.MouseEventArgs e)
         {
             ((HandledMouseEventArgs)e).Handled = true;
@@ -240,6 +296,11 @@ namespace VFRNavSim
                 _txtWindDirection.Value = newVal;
             }
         }
+        /// <summary>
+        /// Custom checkbox behaviour.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void _chkCheckpointAvilable_CheckedChanged(object sender, EventArgs e)
         {
             _txtCheckpointMinutes.Enabled = _chkCheckpointAvilable.Checked;
@@ -247,14 +308,25 @@ namespace VFRNavSim
 
 
         }
+        /// <summary>
+        /// Custom checkbox behaviour.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void _chkWindRandom_CheckedChanged(object sender, EventArgs e)
         {
             _txtWindSpeed.Enabled = !_chkWindRandom.Checked;
             _txtWindDirection.Enabled = !_chkWindRandom.Checked;
         }
 
+        /// <summary>
+        /// Run the simulation.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void _btnExecute_Click(object sender, EventArgs e)
         {
+            // In case of a missing point, return.
             if(_wptStart.Position.Lat == 0 || _wptStart.Position.Lat == 0)
             {
                 MessageBox.Show("אנא הכנס נקודת התחלת לג.");
@@ -265,12 +337,14 @@ namespace VFRNavSim
                 MessageBox.Show("אנא הכנס נקודת סיום לג.");
                 return;
             }
+            // Setup params to pass to the sim window.
             int wndDir = (int)_txtWindDirection.Value;
             int wndSpd = (int)_txtWindSpeed.Value;
             TimeSpan crtTime = new TimeSpan(0, (int)_txtCurrentMinutes.Value, (int)_txtCurrentSeconds.Value);
             TimeSpan idntTime = new TimeSpan(0, (int)_txtCheckpointMinutes.Value, (int)_txtCheckpointSeconds.Value);
             int spd = (int)_txtCruizeSpeed.Value;
             int height = (int)_txtCruizeAltitude.Value;
+            //Create and show sim window
             var win = new InformationWindow
                 (_wptStart,
                 _wptDestination,
@@ -286,7 +360,12 @@ namespace VFRNavSim
                 );
             win.Show();
         }
-
+        
+        /// <summary>
+        /// Custom checkbox behaviour
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void CheckBox1_CheckedChanged(object sender, EventArgs e)
         {
             _txtCurrentMinutes.Enabled = _chkTimeSet.Checked;
@@ -298,6 +377,11 @@ namespace VFRNavSim
 
         }
 
+        /// <summary>
+        /// Run wind settings window.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void הגדרותרוחToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SettingsWindow SettingsWindow = new SettingsWindow();
@@ -314,11 +398,21 @@ namespace VFRNavSim
 
         }
 
+        /// <summary>
+        /// Exit program.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void צאToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
+        /// <summary>
+        /// Start point selection menu for starting point.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void _btnSetStartingPoint_Click(object sender, EventArgs e)
         {
             _frmPointSelectorStart.Show();

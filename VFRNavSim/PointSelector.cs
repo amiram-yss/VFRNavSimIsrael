@@ -13,7 +13,7 @@ using System.Windows.Forms;
 namespace VFRNavSim
 {
     /// <summary>
-    /// 
+    /// Waypoint select menu
     /// </summary>
     public partial class PointSelector : Form
     {
@@ -22,7 +22,7 @@ namespace VFRNavSim
         BindingList<Waypoint> bindingList;
         public event EventHandler PointUpdated;
         /// <summary>
-        /// 
+        /// Constructor and initializor.
         /// </summary>
         /// <param name="_wpt"></param>
         public PointSelector(Waypoint _wpt)
@@ -31,6 +31,11 @@ namespace VFRNavSim
             InitializeLocalVariables(_wpt);
             InitializeControls();
         }
+        /// <summary>
+        /// Sets all waypoints into the menu.
+        /// Also selects a default point as default.
+        /// </summary>
+        /// <param name="_wpt">default point</param>
         private void InitializeLocalVariables(Waypoint _wpt)
         {
             _wptEditedWaypoint = new Waypoint(_wpt.Name, _wpt.Position, _wpt.FiveCharName, _wpt.RequestType);
@@ -45,7 +50,7 @@ namespace VFRNavSim
             }
         }
         /// <summary>
-        /// מגדיר רכיבי ממשק משתמש
+        /// Init GUI components
         /// </summary>
         private void InitializeControls()
         {
@@ -63,7 +68,11 @@ namespace VFRNavSim
             _txtWaypointSearch.TextChanged += _txtWaypointSearch_TextChanged;
             _txtWaypointSearch.KeyPress += _txtWaypointSearch_KeyPress;
         }
-
+        /// <summary>
+        /// Update data in table when text is edited in the search box.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="ev"></param>
         private void _txtWaypointSearch_KeyPress(object sender, EventArgs ev)
         {
             var e = ev as KeyPressEventArgs;
@@ -82,6 +91,9 @@ namespace VFRNavSim
             
         }
 
+        /// <summary>
+        /// Set landmarks on the map
+        /// </summary>
         private void SetVfrLandmarks()
         {
             GMap.NET.WindowsForms.GMapOverlay marksLayout = new GMap.NET.WindowsForms.GMapOverlay();
@@ -92,7 +104,7 @@ namespace VFRNavSim
             _gmpVfrMap.Overlays.Add(marksLayout);
         }
         /// <summary>
-        /// מאתחל את המפה מבלי להכניס לתוכה תוכן
+        /// Inits map without inserting content.
         /// </summary>
         private void InitializeVfrMap()
         {
@@ -113,6 +125,12 @@ namespace VFRNavSim
             _btnOk_Click(this, e);
         }
 
+        /// <summary>
+        /// Landmark on map pressed event.
+        /// </summary>
+        /// <param name="item">landmark</param>
+        /// <param name="e"></param>
+        //TODO: LINQ
         private void LandmarkSelectedOnMap(GMap.NET.WindowsForms.GMapMarker item, MouseEventArgs e)
         {
             foreach (var i in _dicMrkWpt)
@@ -129,7 +147,7 @@ namespace VFRNavSim
             }
         }
         /// <summary>
-        /// מאתחל את טבלת כלל נקודות הציון
+        /// Inits waypoints table.
         /// </summary>
         private void InitializeWaypointTable()
         {
@@ -151,11 +169,11 @@ namespace VFRNavSim
             UpdateTable();
         }
 
+        /// <summary>
+        /// Binds data source to table and therefore it updates
+        /// </summary>
         private void UpdateTable()
         {
-            
-            //Task.Start וכו... 
-            //TODO
             if (_txtWaypointSearch.Text == "")
             {
                 _dgvWaypointsList.DataSource = bindingList;
@@ -178,6 +196,11 @@ namespace VFRNavSim
            
         }
 
+        /// <summary>
+        /// Rountine when a single waypoint is selected from the table
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void _dgvWaypointsList_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             try {
@@ -193,6 +216,9 @@ namespace VFRNavSim
             catch (Exception ex)
             { throw ex; }
         }
+        /// <summary>
+        /// Focuses map on current position
+        /// </summary>
         private void FocusOnPoint()
         {
             _gmpVfrMap.Position = _wptEditedWaypoint.Position;
@@ -217,6 +243,12 @@ namespace VFRNavSim
             _btnOk_Click(this, e);
         }
 
+        /// <summary>
+        /// If Enter key is pressed when a waypoint is being selected, choose it and
+        /// exit menu.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void _dgvWaypointsList_KeyPress(object sender, KeyPressEventArgs e)
         {
             if(e.KeyChar == (char)Keys.Enter)
